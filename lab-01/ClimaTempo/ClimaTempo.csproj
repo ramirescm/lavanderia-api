@@ -1,0 +1,22 @@
+<!-- 
+Este arquivo especifica tudo que é necessário para restaurar as dependencias e recompilar o programa, nele ficam dependencias outras libs e projetos
+-->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+
+    <!-- 
+    
+    O elemento <TargetFramework> especifica qual implementação do .NET Estamos direcionando.
+    
+    antes de mudar a versão verifique os breakchanges da versão em
+    https://docs.microsoft.com/pt-br/ef/core/what-is-new/
+    -->
+    
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+</Project>
