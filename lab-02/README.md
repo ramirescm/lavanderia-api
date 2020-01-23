@@ -1,27 +1,18 @@
-## Aula 1
-
-1 - Preparação do ambiente de desenvolvimento
-
-**Ferramentas**:
-
-    - Visual studio - https://visualstudio.microsoft.com/
-    - Visual studio code - [https://code.visualstudio.com/](https://code.visualstudio.com/)
+## Aula 2
 
 **Conteúdo**
 
-- Criando o primeiro projeto
-- Visão geral do projeto
-- Organizando estrutura do projeto e porque isso é importante?
-- Modelagem de dominio
-- Mapeamento entidade relacionamento
+- Criação e configuração do contexto
+- Mapeando as classes para as tabelas do banco
+- Criando as migrations
+- Gerando o banco de dados
 
 **Objetivos de aprendizagem**
 
-- aprender a configurar o ambiente
-- visão geral da api
-- configuração dos relacionamentos
+- aprendar a configurar o contexto
+- criar e executar migrations
 
 **Entregável**
 
-- projeto ClimaTempo
-- projeto Lavanderia com a modelagem definida
+- projeto configurado com conexão a banco de dados
+- criação do banco de dados

@@ -1,12 +1,5 @@
 ## Aula 1
 
-1 - Preparação do ambiente de desenvolvimento
-
-**Ferramentas**:
-
-    - Visual studio - https://visualstudio.microsoft.com/
-    - Visual studio code - [https://code.visualstudio.com/](https://code.visualstudio.com/)
-
 **Conteúdo**
 
 - Criando o primeiro projeto
