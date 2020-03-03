@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lavanderia.API.Controllers
 {
-    [Route("api/clientes")]
+    [Route("api/clientestest")]
     [ApiController]
     public class ClienteTestController : ControllerBase
     {
