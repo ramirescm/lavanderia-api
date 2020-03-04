@@ -1,4 +1,4 @@
-## Aula 3
+## Aula 5
 
 **Conteúdo**
 
@@ -8,14 +8,11 @@
 	- Query String
 	- URL Path
 	- Header Request
-	
 - Configurar Multi Versionamento com documentação
 
 **Objetivos de aprendizagem**
 
-- criar repository
-- usar dapper para fazer consultas, e outras operações
-- configurar injeção de dependência
+- configurar a documentação e o versionamento da api
 
 **Entregável**
 
