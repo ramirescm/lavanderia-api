@@ -1,0 +1,9 @@
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\bin\Debug\netcoreapp3.1\Documentacao_API_V1.exe
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\obj\Debug\netcoreapp3.1\staticwebassets\Documentacao_API_V1.StaticWebAssets.Manifest.cache
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\obj\Debug\netcoreapp3.1\staticwebassets\Documentacao_API_V1.StaticWebAssets.xml
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\obj\Debug\netcoreapp3.1\Documentacao_API_V1.AssemblyInfoInputs.cache
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\obj\Debug\netcoreapp3.1\Documentacao_API_V1.AssemblyInfo.cs
+C:\dev\labtrackensino\lab-05\Documentacao_API_V1\Documentacao_API_V1\obj\Debug\netcoreapp3.1\Documentacao_API_V1.RazorTargetAssemblyInfo.cache

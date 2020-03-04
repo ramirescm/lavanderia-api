@@ -19,7 +19,6 @@ namespace ClimaTempo.Controllers
             return new List<PrevisaoTempo> { p1, p2, p3, p4 };
         }
     }
-
     public class PrevisaoTempo
     {
         public DateTime Data { get; set; }
