@@ -37,10 +37,10 @@ namespace Lavanderia.API.Configuration
         {
             var info = new OpenApiInfo()
             {
-                Title = "Sample API",
+                Title = "Lavandria API",
                 Version = description.ApiVersion.ToString(),
-                Description = "A sample application with Swagger, Swashbuckle, and API versioning.",
-                Contact = new OpenApiContact() { Name = "Bill Mei", Email = "bill.mei@somewhere.com" },
+                Description = "Labrackensino - DOTNET API",
+                Contact = new OpenApiContact() { Name = "Lavanderia", Email = "labtrackensino@gmail.com" },
                 License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
             };
 
