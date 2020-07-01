@@ -16,3 +16,6 @@ INSERT INTO public.usuarios(
 ```
 
 - Em Package Manager Console -> selecionar o projeto Lavanderia.Infra e executar o update-database
+
+Referência via linha de comando para restaurar os pacotes
+https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-restore
