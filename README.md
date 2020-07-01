@@ -1,5 +1,5 @@
 # labtrackensino
-Projeto criado durante o curso de criação de API com ASPNET Core
+Projeto criado para o curso de criação de API com ASPNET Core [LabTrack](https://labtrack.com.br/)
 
 
 ### Preparação do ambiente de desenvolvimento
