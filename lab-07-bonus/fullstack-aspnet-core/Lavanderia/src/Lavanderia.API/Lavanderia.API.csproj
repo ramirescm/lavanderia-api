@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>d501053d-25f0-41e0-b6c6-f07d53af4f83</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildThisFileName).xml</DocumentationFile>
+    <Configurations>Debug;Release;Staging</Configurations>
+    <!-- https://github.com/dotnet/sdk/pull/3283 -->
+    <SatelliteResourceLanguages>pt;en-US</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lavanderia.Application\Lavanderia.Application.csproj" />
+    <ProjectReference Include="..\Lavanderia.Domain\Lavanderia.Domain.csproj" />
+    <ProjectReference Include="..\Lavanderia.Infra\Lavanderia.Infra.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <EnvironmentName>Development</EnvironmentName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Staging'">
+    <EnvironmentName>Staging</EnvironmentName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <EnvironmentName>Production</EnvironmentName>
+  </PropertyGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="copy appsettings.$(EnvironmentName).json appsettings.json" />
+  </Target>
+
+  <Choose>
+    <When Condition="'$(EnvironmentName)'!='Development'">
+      <ItemGroup>
+        <Content Remove="appsettings.development.json" />
+        <Content Remove="appsettings.staging.json" />
+        <Content Remove="appsettings.production.json" />
+      </ItemGroup>
+    </When>
+  </Choose>
+
+</Project>
