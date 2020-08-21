@@ -14,6 +14,8 @@ namespace Lavanderia.API.Configuration
         public async Task Invoke(HttpContext context)
         {
             // https://rodolfofadino.com.br/http-upgrade-insecure-requests-com-asp-net-core-32851a55b1f5
+            // para validar https://securityheaders.com/
+            // https://cheatsheetseries.owasp.org/
             // configurar de acordo com o ambiente
             if (context.Response.Headers.ContainsKey("X-Powered-By"))
             {
@@ -37,8 +39,8 @@ namespace Lavanderia.API.Configuration
         }
     }
 
-    public static class SecurityMiddlewareExtensions
-    {
-        public static IApplicationBuilder UseSecurityMidleware(this IApplicationBuilder builder) => builder.UseMiddleware<SecurityMidleware>();
-    }
+        public static class SecurityMiddlewareExtensions
+        {
+            public static IApplicationBuilder UseSecurityMidleware(this IApplicationBuilder builder) => builder.UseMiddleware<SecurityMidleware>();
+        }
 }

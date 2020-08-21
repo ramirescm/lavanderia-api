@@ -125,29 +125,7 @@ namespace Lavanderia.API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
         {
             app.UseSecurityMidleware();
-            //app.Use(async (context, next) =>
-            //{
-            //    if (context.Response.Headers.ContainsKey("X-Powered-By"))
-            //    {
-            //        context.Response.Headers.Remove("X-Powered-By");
-            //    }
-
-            //    // 
-            //    if (context.Response.Headers.ContainsKey("Server"))
-            //    {
-            //        context.Response.Headers.Remove("Server");
-            //    }
-
-            //    context.Response.Headers.Add("X-Frame-Options", "sameorigin");
-            //    context.Response.Headers.Add("Referrer-Policy", "no-referrer");
-            //    context.Response.Headers.Add("X-Xss-Protection", "1; mode=block");
-            //    context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
-            //    context.Response.Headers.Add("X-Permitted-Cross-Domain-Policies", "none");
-            //    context.Response.Headers.Add("Content-Security-Policy", "upgrade-insecure-requests;");
-            //    context.Response.Headers.Add("Feature-Policy", "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'");
-
-            //    await next();
-            //});
+            
 
             if (env.IsDevelopment())
             {
