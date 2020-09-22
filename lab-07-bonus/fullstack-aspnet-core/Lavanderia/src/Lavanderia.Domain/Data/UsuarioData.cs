@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lavanderia.Domain.Data
 {
-    class UsuarioData
+    public class UsuarioData
     {
     }
 }
