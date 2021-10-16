@@ -1,9 +1,8 @@
 # labtrackensino
-Projetos criado para o curso de APIs com ASPNET Core.
-Cadastro e validação de clientes
+APIs para gerenciamento de cliente com ASPNET Core.
 
 ## Tecnologias
-- .NET CORE
+- .NET CORE 3.1
 - Postgresql
 
 
