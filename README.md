@@ -1,9 +1,11 @@
-# labtrackensino
-APIs para gerenciamento de cliente com ASPNET Core.
+# Pedidex API
+APIs para gerenciamento de pedidos dos clientes.
 
 ## Tecnologias
 - .NET CORE 3.1
+- EFCore
 - Postgresql
+
 
 
 ### Preparação do ambiente de desenvolvimento
