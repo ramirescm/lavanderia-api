@@ -1,5 +1,5 @@
-# Pedidex API
-APIs para gerenciamento de pedidos dos clientes.
+# Lavanderia API
+APIs para gerenciamento de clientes.
 
 ## Tecnologias
 - .NET CORE 3.1
