@@ -1,5 +1,10 @@
 # labtrackensino
-Projeto criado para o curso de criação de API com ASPNET Core [LabTrack](https://labtrack.com.br/)
+Projetos criado para o curso de APIs com ASPNET Core.
+Cadastro e validação de clientes
+
+## Tecnologias
+- .NET CORE
+- Postgresql
 
 
 ### Preparação do ambiente de desenvolvimento
